@@ -1,0 +1,19 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armJET.dll" 
+
+"H:\PROJECTS\PV4 & WB3 Hardware\Firmware\SDK_2.8.0_MIMXRT1064xxxxA_New\boards\evkmimxrt1064\driver_examples\flexcan\loopback\iar\debug\flexcan_loopback.out" 
+
+--plugin="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armbat.dll" 
+
+--device_macro="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\debugger\NXP\iMXRT.dmac" 
+
+--device_macro="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\debugger\NXP\iMXRT_Trace.dmac" 
+
+--macro="H:\PROJECTS\PV4 & WB3 Hardware\Firmware\SDK_2.8.0_MIMXRT1064xxxxA_New\boards\evkmimxrt1064\driver_examples\flexcan\loopback\iar/evkmimxrt1064.mac" 
+
+--flash_loader="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\flashloader\NXP\FlashIMXRT1064_SIP.board" 
+
+
+
+

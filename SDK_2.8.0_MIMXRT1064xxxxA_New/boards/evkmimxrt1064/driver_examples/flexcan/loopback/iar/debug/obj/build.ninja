@@ -1,0 +1,51 @@
+#Generating source browse information for project flexcan_loopback
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build board.pbi : index board.xcl
+build clock_config.pbi : index clock_config.xcl
+build dcd.pbi : index dcd.xcl
+build pin_mux.pbi : index pin_mux.xcl
+build generic_list.pbi : index generic_list.xcl
+build serial_manager.pbi : index serial_manager.xcl
+build serial_port_uart.pbi : index serial_port_uart.xcl
+build lpuart_adapter.pbi : index lpuart_adapter.xcl
+build system_MIMXRT1064.pbi : index system_MIMXRT1064.xcl
+build fsl_clock.pbi : index fsl_clock.xcl
+build fsl_common.pbi : index fsl_common.xcl
+build fsl_flexcan.pbi : index fsl_flexcan.xcl
+build fsl_gpio.pbi : index fsl_gpio.xcl
+build fsl_lpuart.pbi : index fsl_lpuart.xcl
+build flexcan_loopback.pbi : index flexcan_loopback.xcl
+build fsl_assert.pbi : index fsl_assert.xcl
+build fsl_debug_console.pbi : index fsl_debug_console.xcl
+build fsl_str.pbi : index fsl_str.xcl
+build evkmimxrt1064_flexspi_nor_config.pbi : index evkmimxrt1064_flexspi_nor_config.xcl
+build fsl_flexspi_nor_boot.pbi : index fsl_flexspi_nor_boot.xcl
+build flexcan_loopback_part0.pbi : link board.pbi clock_config.pbi dcd.pbi pin_mux.pbi
+build flexcan_loopback_part1.pbi : link generic_list.pbi serial_manager.pbi serial_port_uart.pbi lpuart_adapter.pbi
+build flexcan_loopback_part2.pbi : link system_MIMXRT1064.pbi fsl_clock.pbi fsl_common.pbi fsl_flexcan.pbi
+build flexcan_loopback_part3.pbi : link fsl_gpio.pbi fsl_lpuart.pbi flexcan_loopback.pbi fsl_assert.pbi
+build flexcan_loopback_part4.pbi : link fsl_debug_console.pbi fsl_str.pbi evkmimxrt1064_flexspi_nor_config.pbi fsl_flexspi_nor_boot.pbi
+build flexcan_loopback.pbd : link flexcan_loopback_part0.pbi flexcan_loopback_part1.pbi flexcan_loopback_part2.pbi flexcan_loopback_part3.pbi flexcan_loopback_part4.pbi
+build flexcan_loopback.pbw : browsedata flexcan_loopback.pbd
+
+

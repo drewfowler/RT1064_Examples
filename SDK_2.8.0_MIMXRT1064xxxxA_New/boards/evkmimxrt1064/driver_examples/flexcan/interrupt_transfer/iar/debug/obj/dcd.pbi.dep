@@ -1,0 +1,9 @@
+dcd.pbi: \
+  H:\PROJECTS\PV4\ &\ WB3\ Hardware\Firmware\SDK_2.8.0_MIMXRT1064xxxxA_New\boards\evkmimxrt1064\driver_examples\flexcan\interrupt_transfer\dcd.c \
+  H:\PROJECTS\PV4\ &\ WB3\ Hardware\Firmware\SDK_2.8.0_MIMXRT1064xxxxA_New\boards\evkmimxrt1064\driver_examples\flexcan\interrupt_transfer/dcd.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdint.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Config_Normal.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product.h
